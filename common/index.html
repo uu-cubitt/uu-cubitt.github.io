@@ -67,29 +67,45 @@
 			<div class="tsd-panel tsd-typography">
 				<h1 id="cubitt-common">Cubitt Common</h1>
 				<p>Common Typescript elements for the Cubitt framework.</p>
-				<p><a href="https://badge.fury.io/js/cubitt-common"><img src="https://badge.fury.io/js/cubitt-common.svg" alt="npm version"></a>
-				<a href="https://raw.githubusercontent.com/uu-cubitt/common/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a></p>
-				<h2 id="installation">Installation</h2>
-				<pre><code class="lang-bash">$ npm install cubitt-common
-</code></pre>
+				<p><a href="https://raw.githubusercontent.com/uu-cubitt/common/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a>
+					<a href="https://badge.fury.io/js/cubitt-common"><img src="https://badge.fury.io/js/cubitt-common.svg" alt="npm version"></a>
+					<a href="https://travis-ci.org/uu-cubitt/common"><img src="https://travis-ci.org/uu-cubitt/common.svg?branch=master" alt="Build Status"></a>
+				<a href="https://codeclimate.com/github/uu-cubitt/common/coverage"><img src="https://codeclimate.com/github/uu-cubitt/common/badges/coverage.svg" alt="Test Coverage"></a></p>
+				<h2 id="about">About</h2>
+				<p>A package that provides common components for usage across the cubitt framework.</p>
 				<h2 id="features">Features</h2>
 				<ul>
-					<li>Generic <string to any> dictionary</li>
+					<li>Generic <code>&lt;string to any&gt;</code> dictionary</li>
 					<li>RFC4122 v4 compatible GUID implementation</li>
 				</ul>
+				<h2 id="usage">Usage</h2>
+				<p>Install the package and then use it in your code.</p>
+				<pre><code class="lang-bash">npm install cubitt-common --save-dev
+</code></pre>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * as Common from <span class="hljs-string">"cubitt-common"</span>;
+</code></pre>
 				<h2 id="documentation">Documentation</h2>
 				<ul>
 					<li><a href="https://uu-cubitt.github.io/common/">Code documentation</a></li>
+					<li><a href="https://cubitt.readme.io/">General documentation</a></li>
 				</ul>
 				<h2 id="for-developers">For developers</h2>
-				<p>To generate documentation run:</p>
-				<pre><code class="lang-bash">$ npm install --only=dev
-$ node_modules/.bin/typedoc --out doc/ --module commonjs --target ES5 --mode file src/
+				<p>To get started:</p>
+				<pre><code class="lang-bash">npm run dev
 </code></pre>
-				<h2 id="people">People</h2>
-				<p>The original authors of Cubitt are Sander Klock and Thomas Ipskamp. The project is coordinated by <a href="http://www.uu.nl/staff/JMEMvanderWerf">Jan Martijn van der Werf</a>.</p>
+				<p>To run the unit tests:</p>
+				<pre><code class="lang-bash">npm run <span class="hljs-built_in">test</span>
+</code></pre>
+				<p>To generate a test coverage report:</p>
+				<pre><code class="lang-bash">npm run <span class="hljs-built_in">test</span>-coverage
+</code></pre>
+				<p>To generate documentation:</p>
+				<pre><code class="lang-bash">npm run typedoc
+</code></pre>
 				<h2 id="license">License</h2>
 				<p><a href="LICENSE">MIT</a></p>
+				<h2 id="changelog">Changelog</h2>
+				<p><a href="changelog.md">Changelog</a></p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
