@@ -70,7 +70,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Base command that deletes some property from some element</p>
+						<p>Base command that deletes some property from some element.</p>
 					</div>
 				</div>
 			</section>
@@ -138,22 +138,17 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Set<wbr>Property<wbr>Command<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, requestId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, sessionId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, type<span class="tsd-signature-symbol">: </span><a href="../enums/commandtype.html" class="tsd-signature-type">CommandType</a>, elementId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, propertyName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, propertyValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="setpropertycommand.html" class="tsd-signature-type">SetPropertyCommand</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Set<wbr>Property<wbr>Command<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, requestId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, sessionId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, type<span class="tsd-signature-symbol">: </span><a href="../globals.html#commandtype" class="tsd-signature-type">CommandType</a>, elementId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, propertyName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, propertyValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="setpropertycommand.html" class="tsd-signature-type">SetPropertyCommand</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="command.html">Command</a>.<a href="command.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/master/src/commands/SetPropertyCommand.ts#L9">commands/SetPropertyCommand.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/2a4917f/src/commands/SetPropertyCommand.ts#L23">commands/SetPropertyCommand.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>oaram</dt>
-									<dd><p>propertyValue The value of the property that has to be set</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -161,7 +156,7 @@
 									<h5>id: <span class="tsd-signature-type">Guid</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The RFC4122 v4 compliant ID of this command</p>
+											<p>The RFC4122 v4 compliant ID of this command.</p>
 										</div>
 									</div>
 								</li>
@@ -169,7 +164,7 @@
 									<h5>requestId: <span class="tsd-signature-type">Guid</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The RFC4122 v4 compliant ID of the request that created this command</p>
+											<p>The RFC4122 v4 compliant ID of the request that created this command.</p>
 										</div>
 									</div>
 								</li>
@@ -177,18 +172,18 @@
 									<h5>sessionId: <span class="tsd-signature-type">Guid</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The RFC4122 v4 compliant ID of the session that created this command</p>
+											<p>The RFC4122 v4 compliant ID of the session that created this command.</p>
 										</div>
 									</div>
 								</li>
 								<li>
-									<h5>type: <a href="../enums/commandtype.html" class="tsd-signature-type">CommandType</a></h5>
+									<h5>type: <a href="../globals.html#commandtype" class="tsd-signature-type">CommandType</a></h5>
 								</li>
 								<li>
 									<h5>elementId: <span class="tsd-signature-type">Guid</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The RFC4122 v4 compliant ID of the element with the property that has to be set</p>
+											<p>The RFC4122 v4 compliant ID of the element with the property that has to be set.</p>
 										</div>
 									</div>
 								</li>
@@ -196,12 +191,17 @@
 									<h5>propertyName: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The name of the property that has to be set</p>
+											<p>The name of the property that has to be set.</p>
 										</div>
 									</div>
 								</li>
 								<li>
 									<h5>propertyValue: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The value of the property that has to be set.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="setpropertycommand.html" class="tsd-signature-type">SetPropertyCommand</a></h4>
@@ -217,12 +217,12 @@
 					<div class="tsd-signature tsd-kind-icon">element<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Guid</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/master/src/commands/SetPropertyCommand.ts#L26">commands/SetPropertyCommand.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/2a4917f/src/commands/SetPropertyCommand.ts#L13">commands/SetPropertyCommand.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The RFC4122 v4 compliant ID of the element with the property that has to be set</p>
+							<p>The RFC4122 v4 compliant ID of the element with the property that has to be set.</p>
 						</div>
 					</div>
 				</section>
@@ -233,12 +233,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="command.html">Command</a>.<a href="command.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/master/src/commands/Command.ts#L19">commands/Command.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/2a4917f/src/commands/Command.ts#L12">commands/Command.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The RFC4122 v4 compliant ID of this command</p>
+							<p>The RFC4122 v4 compliant ID of this command.</p>
 						</div>
 					</div>
 				</section>
@@ -248,12 +248,12 @@
 					<div class="tsd-signature tsd-kind-icon">property<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/master/src/commands/SetPropertyCommand.ts#L30">commands/SetPropertyCommand.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/2a4917f/src/commands/SetPropertyCommand.ts#L18">commands/SetPropertyCommand.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The name of the property that has to be set</p>
+							<p>The name of the property that has to be set.</p>
 						</div>
 					</div>
 				</section>
@@ -263,12 +263,12 @@
 					<div class="tsd-signature tsd-kind-icon">property<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/master/src/commands/SetPropertyCommand.ts#L34">commands/SetPropertyCommand.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/2a4917f/src/commands/SetPropertyCommand.ts#L23">commands/SetPropertyCommand.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The value of the property that has to be set</p>
+							<p>The value of the property that has to be set.</p>
 						</div>
 					</div>
 				</section>
@@ -279,12 +279,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="command.html">Command</a>.<a href="command.html#requestid">requestId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/master/src/commands/Command.ts#L23">commands/Command.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/2a4917f/src/commands/Command.ts#L17">commands/Command.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The RFC4122 v4 compliant ID of the request that created this command</p>
+							<p>The RFC4122 v4 compliant ID of the request that created this command.</p>
 						</div>
 					</div>
 				</section>
@@ -295,28 +295,28 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="command.html">Command</a>.<a href="command.html#sessionid">sessionId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/master/src/commands/Command.ts#L27">commands/Command.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/2a4917f/src/commands/Command.ts#L22">commands/Command.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The RFC4122 v4 compliant ID of the session that created this command</p>
+							<p>The RFC4122 v4 compliant ID of the session that created this command.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/commandtype.html" class="tsd-signature-type">CommandType</a></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../globals.html#commandtype" class="tsd-signature-type">CommandType</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="command.html">Command</a>.<a href="command.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/master/src/commands/Command.ts#L31">commands/Command.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/2a4917f/src/commands/Command.ts#L27">commands/Command.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The type of this command</p>
+							<p>The type of this command.</p>
 						</div>
 					</div>
 				</section>
@@ -334,7 +334,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="command.html">Command</a>.<a href="command.html#tojson">toJson</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/master/src/commands/Command.ts#L39">commands/Command.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/commands/blob/2a4917f/src/commands/Command.ts#L50">commands/Command.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -359,7 +359,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
-						<a href="../enums/commandtype.html" class="tsd-kind-icon">Command<wbr>Type</a>
+						<a href="../enums/validationtype.html" class="tsd-kind-icon">Validation<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="addcommand.html" class="tsd-kind-icon">Add<wbr>Command</a>
@@ -378,6 +378,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="command.html" class="tsd-kind-icon">Command</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="commandfactory.html" class="tsd-kind-icon">Command<wbr>Factory</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="deletecommand.html" class="tsd-kind-icon">Delete<wbr>Command</a>
@@ -457,6 +460,9 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-object-literal">
+						<a href="../globals.html#commandtype" class="tsd-kind-icon">Command<wbr>Type</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
