@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EventType | cubitt-events</title>
+	<title>ValidationType | cubitt-events</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="eventtype.html">EventType</a>
+					<a href="validationtype.html">ValidationType</a>
 				</li>
 			</ul>
-			<h1>Enumeration EventType</h1>
+			<h1>Enumeration ValidationType</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>All possible types of events</p>
+						<p>An enum for all types of attributes that can be validated.</p>
 					</div>
 				</div>
 			</section>
@@ -81,22 +81,11 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#connectoradded" class="tsd-kind-icon">Connector<wbr>Added</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#connectordeleted" class="tsd-kind-icon">Connector<wbr>Deleted</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#connectorpropertydeleted" class="tsd-kind-icon">Connector<wbr>Property<wbr>Deleted</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#connectorpropertyset" class="tsd-kind-icon">Connector<wbr>Property<wbr>Set</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#edgeadded" class="tsd-kind-icon">Edge<wbr>Added</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#edgedeleted" class="tsd-kind-icon">Edge<wbr>Deleted</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#edgepropertydeleted" class="tsd-kind-icon">Edge<wbr>Property<wbr>Deleted</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#edgepropertyset" class="tsd-kind-icon">Edge<wbr>Property<wbr>Set</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#modeladded" class="tsd-kind-icon">Model<wbr>Added</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#modeldeleted" class="tsd-kind-icon">Model<wbr>Deleted</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#modelpropertydeleted" class="tsd-kind-icon">Model<wbr>Property<wbr>Deleted</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#modelpropertyset" class="tsd-kind-icon">Model<wbr>Property<wbr>Set</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#nodeadded" class="tsd-kind-icon">Node<wbr>Added</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#nodedeleted" class="tsd-kind-icon">Node<wbr>Deleted</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#nodepropertydeleted" class="tsd-kind-icon">Node<wbr>Property<wbr>Deleted</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="eventtype.html#nodepropertyset" class="tsd-kind-icon">Node<wbr>Property<wbr>Set</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="validationtype.html#any" class="tsd-kind-icon">Any</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="validationtype.html#guid" class="tsd-kind-icon">Guid</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="validationtype.html#number" class="tsd-kind-icon">Number</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="validationtype.html#properties" class="tsd-kind-icon">Properties</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="validationtype.html#string" class="tsd-kind-icon">String</a></li>
 							</ul>
 						</section>
 					</div>
@@ -105,162 +94,52 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="connectoradded" class="tsd-anchor"></a>
-					<h3>Connector<wbr>Added</h3>
-					<div class="tsd-signature tsd-kind-icon">Connector<wbr>Added<span class="tsd-signature-symbol">:</span> </div>
+					<a name="any" class="tsd-anchor"></a>
+					<h3>Any</h3>
+					<div class="tsd-signature tsd-kind-icon">Any<span class="tsd-signature-symbol">:</span> </div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L5">EventType.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/EventFactory.ts#L518">EventFactory.ts:518</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="connectordeleted" class="tsd-anchor"></a>
-					<h3>Connector<wbr>Deleted</h3>
-					<div class="tsd-signature tsd-kind-icon">Connector<wbr>Deleted<span class="tsd-signature-symbol">:</span> </div>
+					<a name="guid" class="tsd-anchor"></a>
+					<h3>Guid</h3>
+					<div class="tsd-signature tsd-kind-icon">Guid<span class="tsd-signature-symbol">:</span> </div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L9">EventType.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/EventFactory.ts#L515">EventFactory.ts:515</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="connectorpropertydeleted" class="tsd-anchor"></a>
-					<h3>Connector<wbr>Property<wbr>Deleted</h3>
-					<div class="tsd-signature tsd-kind-icon">Connector<wbr>Property<wbr>Deleted<span class="tsd-signature-symbol">:</span> </div>
+					<a name="number" class="tsd-anchor"></a>
+					<h3>Number</h3>
+					<div class="tsd-signature tsd-kind-icon">Number<span class="tsd-signature-symbol">:</span> </div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L17">EventType.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/EventFactory.ts#L519">EventFactory.ts:519</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="connectorpropertyset" class="tsd-anchor"></a>
-					<h3>Connector<wbr>Property<wbr>Set</h3>
-					<div class="tsd-signature tsd-kind-icon">Connector<wbr>Property<wbr>Set<span class="tsd-signature-symbol">:</span> </div>
+					<a name="properties" class="tsd-anchor"></a>
+					<h3>Properties</h3>
+					<div class="tsd-signature tsd-kind-icon">Properties<span class="tsd-signature-symbol">:</span> </div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L13">EventType.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/EventFactory.ts#L517">EventFactory.ts:517</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="edgeadded" class="tsd-anchor"></a>
-					<h3>Edge<wbr>Added</h3>
-					<div class="tsd-signature tsd-kind-icon">Edge<wbr>Added<span class="tsd-signature-symbol">:</span> </div>
+					<a name="string" class="tsd-anchor"></a>
+					<h3>String</h3>
+					<div class="tsd-signature tsd-kind-icon">String<span class="tsd-signature-symbol">:</span> </div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L6">EventType.ts:6</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="edgedeleted" class="tsd-anchor"></a>
-					<h3>Edge<wbr>Deleted</h3>
-					<div class="tsd-signature tsd-kind-icon">Edge<wbr>Deleted<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L10">EventType.ts:10</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="edgepropertydeleted" class="tsd-anchor"></a>
-					<h3>Edge<wbr>Property<wbr>Deleted</h3>
-					<div class="tsd-signature tsd-kind-icon">Edge<wbr>Property<wbr>Deleted<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L18">EventType.ts:18</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="edgepropertyset" class="tsd-anchor"></a>
-					<h3>Edge<wbr>Property<wbr>Set</h3>
-					<div class="tsd-signature tsd-kind-icon">Edge<wbr>Property<wbr>Set<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L14">EventType.ts:14</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="modeladded" class="tsd-anchor"></a>
-					<h3>Model<wbr>Added</h3>
-					<div class="tsd-signature tsd-kind-icon">Model<wbr>Added<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L7">EventType.ts:7</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="modeldeleted" class="tsd-anchor"></a>
-					<h3>Model<wbr>Deleted</h3>
-					<div class="tsd-signature tsd-kind-icon">Model<wbr>Deleted<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L11">EventType.ts:11</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="modelpropertydeleted" class="tsd-anchor"></a>
-					<h3>Model<wbr>Property<wbr>Deleted</h3>
-					<div class="tsd-signature tsd-kind-icon">Model<wbr>Property<wbr>Deleted<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L19">EventType.ts:19</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="modelpropertyset" class="tsd-anchor"></a>
-					<h3>Model<wbr>Property<wbr>Set</h3>
-					<div class="tsd-signature tsd-kind-icon">Model<wbr>Property<wbr>Set<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L15">EventType.ts:15</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="nodeadded" class="tsd-anchor"></a>
-					<h3>Node<wbr>Added</h3>
-					<div class="tsd-signature tsd-kind-icon">Node<wbr>Added<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L8">EventType.ts:8</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="nodedeleted" class="tsd-anchor"></a>
-					<h3>Node<wbr>Deleted</h3>
-					<div class="tsd-signature tsd-kind-icon">Node<wbr>Deleted<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L12">EventType.ts:12</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="nodepropertydeleted" class="tsd-anchor"></a>
-					<h3>Node<wbr>Property<wbr>Deleted</h3>
-					<div class="tsd-signature tsd-kind-icon">Node<wbr>Property<wbr>Deleted<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L20">EventType.ts:20</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="nodepropertyset" class="tsd-anchor"></a>
-					<h3>Node<wbr>Property<wbr>Set</h3>
-					<div class="tsd-signature tsd-kind-icon">Node<wbr>Property<wbr>Set<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/EventType.ts#L16">EventType.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/EventFactory.ts#L516">EventFactory.ts:516</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -279,55 +158,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="eventtype.html" class="tsd-kind-icon">Event<wbr>Type</a>
+						<a href="validationtype.html" class="tsd-kind-icon">Validation<wbr>Type</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#connectoradded" class="tsd-kind-icon">Connector<wbr>Added</a>
+								<a href="validationtype.html#any" class="tsd-kind-icon">Any</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#connectordeleted" class="tsd-kind-icon">Connector<wbr>Deleted</a>
+								<a href="validationtype.html#guid" class="tsd-kind-icon">Guid</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#connectorpropertydeleted" class="tsd-kind-icon">Connector<wbr>Property<wbr>Deleted</a>
+								<a href="validationtype.html#number" class="tsd-kind-icon">Number</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#connectorpropertyset" class="tsd-kind-icon">Connector<wbr>Property<wbr>Set</a>
+								<a href="validationtype.html#properties" class="tsd-kind-icon">Properties</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#edgeadded" class="tsd-kind-icon">Edge<wbr>Added</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#edgedeleted" class="tsd-kind-icon">Edge<wbr>Deleted</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#edgepropertydeleted" class="tsd-kind-icon">Edge<wbr>Property<wbr>Deleted</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#edgepropertyset" class="tsd-kind-icon">Edge<wbr>Property<wbr>Set</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#modeladded" class="tsd-kind-icon">Model<wbr>Added</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#modeldeleted" class="tsd-kind-icon">Model<wbr>Deleted</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#modelpropertydeleted" class="tsd-kind-icon">Model<wbr>Property<wbr>Deleted</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#modelpropertyset" class="tsd-kind-icon">Model<wbr>Property<wbr>Set</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#nodeadded" class="tsd-kind-icon">Node<wbr>Added</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#nodedeleted" class="tsd-kind-icon">Node<wbr>Deleted</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#nodepropertydeleted" class="tsd-kind-icon">Node<wbr>Property<wbr>Deleted</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="eventtype.html#nodepropertyset" class="tsd-kind-icon">Node<wbr>Property<wbr>Set</a>
+								<a href="validationtype.html#string" class="tsd-kind-icon">String</a>
 							</li>
 						</ul>
 					</li>
@@ -367,6 +213,9 @@
 						<a href="../classes/event.html" class="tsd-kind-icon">Event</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="../classes/eventfactory.html" class="tsd-kind-icon">Event<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="../classes/modeladdedevent.html" class="tsd-kind-icon">Model<wbr>Added<wbr>Event</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -395,6 +244,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/propertysetevent.html" class="tsd-kind-icon">Property<wbr>Set<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="../globals.html#eventtype" class="tsd-kind-icon">Event<wbr>Type</a>
 					</li>
 				</ul>
 			</nav>

@@ -70,7 +70,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An event that was raised when a property of a node was set</p>
+						<p>An event that was raised when a property of a node was set.</p>
 					</div>
 				</div>
 			</section>
@@ -124,14 +124,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Node<wbr>Property<wbr>Set<wbr>Event<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SetNodePropertyCommand</span>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="nodepropertysetevent.html" class="tsd-signature-type">NodePropertySetEvent</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Node<wbr>Property<wbr>Set<wbr>Event<span class="tsd-signature-symbol">(</span>sourceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, timestamp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, elementId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, propertyName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, propertyValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="nodepropertysetevent.html" class="tsd-signature-type">NodePropertySetEvent</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertysetevent.html">PropertySetEvent</a>.<a href="propertysetevent.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/events/NodePropertySetEvent.ts#L9">events/NodePropertySetEvent.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/events/NodePropertySetEvent.ts#L9">events/NodePropertySetEvent.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -139,13 +139,50 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>command: <span class="tsd-signature-type">SetNodePropertyCommand</span></h5>
+									<h5>sourceId: <span class="tsd-signature-type">Guid</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The RFC4122 v4 compliant ID of the command that caused this event.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>version: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The new current version number</p>
+											<p>The new current version number.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>timestamp: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The timestamp for the moment this event was created in milliseconds elapsed since 1 January 1970 00:00:00 UTC.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>elementId: <span class="tsd-signature-type">Guid</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The RFC4122 v4 compliant ID of the element for which the property was set.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>propertyName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The name of the property that was set.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>propertyValue: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The value of the property that was set.</p>
 										</div>
 									</div>
 								</li>
@@ -164,12 +201,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="propertysetevent.html">PropertySetEvent</a>.<a href="propertysetevent.html#elementid">elementId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/events/PropertySetEvent.ts#L30">events/PropertySetEvent.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/events/PropertySetEvent.ts#L13">events/PropertySetEvent.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The RFC4122 v4 compliant ID of the element for which the property was set</p>
+							<p>The RFC4122 v4 compliant ID of the element for which the property was set.</p>
 						</div>
 					</div>
 				</section>
@@ -180,12 +217,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="propertysetevent.html">PropertySetEvent</a>.<a href="propertysetevent.html#propertyname">propertyName</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/events/PropertySetEvent.ts#L35">events/PropertySetEvent.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/events/PropertySetEvent.ts#L18">events/PropertySetEvent.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The name of the property that was set</p>
+							<p>The name of the property that was set.</p>
 						</div>
 					</div>
 				</section>
@@ -196,12 +233,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="propertysetevent.html">PropertySetEvent</a>.<a href="propertysetevent.html#propertyvalue">propertyValue</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/events/PropertySetEvent.ts#L40">events/PropertySetEvent.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/events/PropertySetEvent.ts#L23">events/PropertySetEvent.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The value of the property that was set</p>
+							<p>The value of the property that was set.</p>
 						</div>
 					</div>
 				</section>
@@ -212,12 +249,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="event.html">Event</a>.<a href="event.html#sourceid">sourceId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/events/Event.ts#L33">events/Event.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/events/Event.ts#L12">events/Event.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The RFC4122 v4 compliant ID of the command that caused this event</p>
+							<p>The RFC4122 v4 compliant ID of the command that caused this event.</p>
 						</div>
 					</div>
 				</section>
@@ -228,28 +265,28 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="event.html">Event</a>.<a href="event.html#timestamp">timestamp</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/events/Event.ts#L38">events/Event.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/events/Event.ts#L27">events/Event.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The timestamp for the moment this event was created in milliseconds elapsed since 1 January 1970 00:00:00 UTC</p>
+							<p>The timestamp for the moment this event was created in milliseconds elapsed since 1 January 1970 00:00:00 UTC.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/eventtype.html" class="tsd-signature-type">EventType</a></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../globals.html#eventtype" class="tsd-signature-type">EventType</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="event.html">Event</a>.<a href="event.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/events/Event.ts#L24">events/Event.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/events/Event.ts#L22">events/Event.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The type of this event</p>
+							<p>The type of this event.</p>
 						</div>
 					</div>
 				</section>
@@ -260,12 +297,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="event.html">Event</a>.<a href="event.html#version">version</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/events/Event.ts#L20">events/Event.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/events/Event.ts#L17">events/Event.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The new current version number</p>
+							<p>The new version number after applying this event.</p>
 						</div>
 					</div>
 				</section>
@@ -283,7 +320,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="event.html">Event</a>.<a href="event.html#tojson">toJson</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/master/src/events/Event.ts#L43">events/Event.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/events/blob/e4d60dc/src/events/Event.ts#L50">events/Event.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -308,7 +345,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
-						<a href="../enums/eventtype.html" class="tsd-kind-icon">Event<wbr>Type</a>
+						<a href="../enums/validationtype.html" class="tsd-kind-icon">Validation<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="addedevent.html" class="tsd-kind-icon">Added<wbr>Event</a>
@@ -342,6 +379,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="event.html" class="tsd-kind-icon">Event</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="eventfactory.html" class="tsd-kind-icon">Event<wbr>Factory</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="modeladdedevent.html" class="tsd-kind-icon">Model<wbr>Added<wbr>Event</a>
@@ -405,6 +445,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="propertysetevent.html" class="tsd-kind-icon">Property<wbr>Set<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="../globals.html#eventtype" class="tsd-kind-icon">Event<wbr>Type</a>
 					</li>
 				</ul>
 			</nav>
