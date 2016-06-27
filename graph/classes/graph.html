@@ -102,7 +102,7 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="graph.html#elements" class="tsd-kind-icon">Elements</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="graph.html#elements" class="tsd-kind-icon">elements</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -119,6 +119,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graph.html#deletenode" class="tsd-kind-icon">delete<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graph.html#deleteproperty" class="tsd-kind-icon">delete<wbr>Property</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graph.html#deserialize" class="tsd-kind-icon">deserialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="graph.html#enqueuechildelement" class="tsd-kind-icon">enqueue<wbr>Child<wbr>Element</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graph.html#getelement" class="tsd-kind-icon">get<wbr>Element</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graph.html#hasconnector" class="tsd-kind-icon">has<wbr>Connector</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graph.html#hasedge" class="tsd-kind-icon">has<wbr>Edge</a></li>
@@ -145,7 +146,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L16">Graph.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L17">Graph.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graph.html" class="tsd-signature-type">Graph</a></h4>
@@ -157,11 +158,11 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="elements" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> Elements</h3>
-					<div class="tsd-signature tsd-kind-icon">Elements<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><a href="abstractelement.html" class="tsd-signature-type">AbstractElement</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> elements</h3>
+					<div class="tsd-signature tsd-kind-icon">elements<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><a href="abstractelement.html" class="tsd-signature-type">AbstractElement</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L16">Graph.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L17">Graph.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -179,7 +180,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#addconnector">addConnector</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L172">Graph.ts:172</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L192">Graph.ts:192</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -217,7 +218,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#addedge">addEdge</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L121">Graph.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L131">Graph.ts:131</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -254,14 +255,14 @@
 					<a name="addmodel" class="tsd-anchor"></a>
 					<h3>add<wbr>Model</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Model<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, properties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Model<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, properties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, parentId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Guid</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#addmodel">addModel</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L199">Graph.ts:199</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L224">Graph.ts:224</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -280,6 +281,9 @@
 								<li>
 									<h5>properties: <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parentId: <span class="tsd-signature-type">Guid</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
@@ -289,14 +293,14 @@
 					<a name="addnode" class="tsd-anchor"></a>
 					<h3>add<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, modelId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, properties<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, modelId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guid</span>, properties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#addnode">addNode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L98">Graph.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L102">Graph.ts:102</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -316,7 +320,7 @@
 									<h5>modelId: <span class="tsd-signature-type">Guid</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> properties: <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
+									<h5>properties: <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -334,7 +338,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#deleteconnector">deleteConnector</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L241">Graph.ts:241</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L288">Graph.ts:288</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -363,7 +367,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#deleteedge">deleteEdge</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L233">Graph.ts:233</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L281">Graph.ts:281</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -391,7 +395,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L80">Graph.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L83">Graph.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -429,7 +433,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#deletemodel">deleteModel</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L249">Graph.ts:249</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L295">Graph.ts:295</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -458,7 +462,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#deletenode">deleteNode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L225">Graph.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L274">Graph.ts:274</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -487,7 +491,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#deleteproperty">deleteProperty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L257">Graph.ts:257</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L302">Graph.ts:302</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -519,7 +523,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#deserialize">deserialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L269">Graph.ts:269</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L314">Graph.ts:314</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -539,6 +543,55 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="enqueuechildelement" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> enqueue<wbr>Child<wbr>Element</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">enqueue<wbr>Child<wbr>Element<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, queue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Queue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span>, inQueue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L402">Graph.ts:402</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Iterate over the child elements to add them</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Type of the child elements</p>
+									</div>
+								</li>
+								<li>
+									<h5>children: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the Children to iterate over</p>
+									</div>
+								</li>
+								<li>
+									<h5>queue: <span class="tsd-signature-type">Queue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The queue to add elements to</p>
+									</div>
+								</li>
+								<li>
+									<h5>inQueue: <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Boolean</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>register which elements are processed</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getelement" class="tsd-anchor"></a>
 					<h3>get<wbr>Element</h3>
@@ -549,7 +602,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L27">Graph.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L28">Graph.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -581,7 +634,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#hasconnector">hasConnector</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L61">Graph.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L64">Graph.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -610,7 +663,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#hasedge">hasEdge</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L69">Graph.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L72">Graph.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -639,7 +692,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#haselement">hasElement</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L38">Graph.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L41">Graph.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -668,7 +721,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#hasmodel">hasModel</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L45">Graph.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L48">Graph.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -697,7 +750,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#hasnode">hasNode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L53">Graph.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L56">Graph.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -725,7 +778,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L314">Graph.ts:314</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L417">Graph.ts:417</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -757,7 +810,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#serialize">serialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L325">Graph.ts:325</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L428">Graph.ts:428</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -802,7 +855,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/graphinterface.html">GraphInterface</a>.<a href="../interfaces/graphinterface.html#setproperty">setProperty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/master/src/Graph.ts#L214">Graph.ts:214</a></li>
+									<li>Defined in <a href="https://github.com/uu-cubitt/graph/blob/aacbe0f/src/Graph.ts#L263">Graph.ts:263</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -859,7 +912,7 @@
 								<a href="graph.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="graph.html#elements" class="tsd-kind-icon">Elements</a>
+								<a href="graph.html#elements" class="tsd-kind-icon">elements</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="graph.html#addconnector" class="tsd-kind-icon">add<wbr>Connector</a>
@@ -893,6 +946,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="graph.html#deserialize" class="tsd-kind-icon">deserialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="graph.html#enqueuechildelement" class="tsd-kind-icon">enqueue<wbr>Child<wbr>Element</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="graph.html#getelement" class="tsd-kind-icon">get<wbr>Element</a>
@@ -936,21 +992,6 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/graphinterface.html" class="tsd-kind-icon">Graph<wbr>Interface</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#expect" class="tsd-kind-icon">expect</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#guids" class="tsd-kind-icon">guids</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-not-exported">
-						<a href="../globals.html#createtrianglegraph" class="tsd-kind-icon">create<wbr>Triangle<wbr>Graph</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-not-exported">
-						<a href="../globals.html#showguidtypes" class="tsd-kind-icon">showGUIDTypes</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-not-exported">
-						<a href="../globals.html#uniqueguid" class="tsd-kind-icon">uniqueGUID</a>
 					</li>
 				</ul>
 			</nav>
